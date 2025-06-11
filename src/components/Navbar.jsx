@@ -11,19 +11,26 @@ const Navbar = () => {
         {id: 5, name: 'Contact'},
     ]
   return (
-    <nav className='flex justify-between items-center bg-primary py-4 px-5 shadow-md fixed w-full rounded-b-md'>
+    <nav className='flex justify-between items-center bg-primary py-4 px-5 shadow-md fixed z-1 w-full rounded-b-md'>
         {/* Logo */}
         <a href="#Home" className='flex items-center gap-2'>
             <img src={Logo1} alt="logo1" className='size-15'/>
             <span className='text-3xl font-bold text-white'>ShopCart</span>
         </a>
         {/* element */}
-        <div className='flex items-center gap-10'>
+        <ul className='flex items-center gap-10 '>
           {Items.map((item) => (
-            <a key={item.id} href={item.name} className='font-medium text-white inline-block hover:text-accent1 duration-200'>{item.name}</a>
+            <li>
+              <a key={item.id} href={item.name} className='group font-medium text-white block relative '>
+                {item.name}
+                <span className='absolute inset-x-0 bottom-0 h-0.5 bg-accent1 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left'></span>
+              </a>
+            </li>
           ))}       
+        </ul>
+        <div className='bg-primary'>
+          <a href="#" className='p-4 bg-accent2 rounded-4xl font-medium text-white text-center hover:bg-accent1 hover:text-primary transform duration-300'>Get Started</a>
         </div>
-        <div className='bg-primary'>test</div>
     </nav>
   )
 }
