@@ -15,11 +15,8 @@ const Hero = () => {
                 </p>
             </div>
             {/* image */}
-            <div className='flex-1 w-full h-150 flex flex-wrap relative'>
-                <img src={Cart1} alt="" className='rounded-full size-75 top-20 left-30 shadow-2xl absolute'/>
-                <img src={Cart2} alt="" className='rounded-full size-65 top-60 left-70 shadow-2xl absolute'/>
-                <img src={Cart3} alt="" className='rounded-full size-70 top-40 right-70 shadow-2xl absolute'/>
-                <img src={Cart4} alt="" className='rounded-full size-90 top-70 right-20 shadow-2xl absolute'/>
+            <div className='flex-1 w-full h-150 flex justify-center items-center'>
+                <img src={Cart1} alt="" className='rounded-full size-130 top-20 left-30 shadow-2xl'/>
             </div>
         </div>
     </section>

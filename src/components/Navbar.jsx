@@ -20,8 +20,8 @@ const Navbar = () => {
         {/* element */}
         <ul className='flex items-center gap-10 '>
           {Items.map((item) => (
-            <li>
-              <a key={item.id} href={item.name} className='group font-medium text-white block relative '>
+            <li key={item.id}>
+              <a href={item.name} className='group font-medium text-white block relative '>
                 {item.name}
                 <span className='absolute inset-x-0 bottom-0 h-0.5 bg-accent1 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left'></span>
               </a>
