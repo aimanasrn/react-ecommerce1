@@ -20,7 +20,7 @@ const Features = () => {
               </div>
               <div className='flex flex-wrap mx-3 mt-10 gap-6 justify-center'>
                 {card.map((item) => (
-                  <div key={item.id} className='h-65 w-120 shadow-md rounded-xl p-3 flex flex-col font-poppins'>
+                  <div key={item.id} className='h-65 w-120 shadow-md rounded-xl p-3 flex flex-col font-poppins transform-transition duration-300 hover:-translate-y-2 hover:shadow-2xl'>
                     <div className={`flex justify-start items-center w-20 h-20`}>
                       <span className={`${item.iconColor} ${item.bgIcon} text-6xl p-2 rounded-full`}>{item.icon}</span>
                     </div>
