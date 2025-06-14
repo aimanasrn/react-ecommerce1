@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cart1, Cart2, Cart3, Cart4 } from '../assets/img'
+import { Cart1 } from '../assets/img'
 
 const Hero = () => {
   return (
