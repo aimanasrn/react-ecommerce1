@@ -38,7 +38,7 @@ const Features = () => {
               </div>
           </div>
       </section>
-      <section id='Features' className='h-[50vh] px-4 py-20 mx-auto flex justify-center items-center'>
+      <section className='h-[50vh] px-4 py-20 mx-auto flex justify-center items-center'>
           <div className='flex flex-col w-full h-100'>
               <div className='text-center font-poppins items-center'>
                 <h1 className='text-5xl font-bold mb-3'>How ShopCart Works</h1>

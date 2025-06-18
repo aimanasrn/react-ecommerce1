@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className='flex justify-between items-center bg-primary py-4 px-5 shadow-md fixed z-1 w-full rounded-b-md'>
         {/* Logo */}
-        <a href="#Home" className='flex items-center gap-2'>
+        <a href="Home" className='flex items-center gap-2'>
             <img src={Logo1} alt="logo1" className='size-15'/>
             <span className='text-3xl font-bold text-white'>ShopCart</span>
         </a>
